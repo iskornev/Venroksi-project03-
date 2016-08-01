@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+
+<meta charset="utf-8" />
+
+ <link rel="shortcut icon" type="image/png" href="file:///Users/andreyiskornev/Desktop/Venroksi%20(project03)/Images/IMG_0119.PNG">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Venroksi home page</title>
+<meta name="description" content="Venroksi art web site">
+  <meta name="keywords" content="venroksi, art, provocation">
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+    <nav id="top">
+
+  <ul>
+    <a class="home-link" href="http://venroksi.com/index.html"></a>
+    <li>
+      <a class="about-link" href="about.html"></a>
+    </li>
+    <li>
+      <a class="work-link" href="workpage.html"></a> 
+    </li>
+    <li>
+      <a class="contact-link" href="contactus.html"></a>
+    </li>
+
+     <li>
+      <a class="video-link" href="video.html"></a>
+     </li>
+     <li>
+       <a class="voice-link" href="voice.html"></a>
+     </li>
+
+  </ul>
+</nav>
+<div style="position: fixed; top: 120px; left: 0; right: 0;">
+<div style="height: 144px; width: 223px; display: block; position:absolute;background: #e4bd3f; border-radius: 50%; left: 420px; opacity:0.8" class="sun"></div>
+</div>
+
+<div id="mount"></div>
+
+<div id="quote">
+  <p><q>You can't repeat the past.<br>
+              Why of course you can!<br>
+               -The G.G. </q></p></div>
+
+<div id="greeting" class="large">   
+           <p>A: The flight Moscow-Los Angeles. <mark>V</mark>eeery long 12 hours. Th<mark>e</mark> most I can do to turn back time.<br>
+               Z: It's amazi<mark>n</mark>g how quickly you switch from role as a to your artist alte<mark>r</mark> ego!<br>
+               A: Tw<mark>o</mark> sides of same coin, I guess. One <mark>k</mark>eeps cool, another creates. <br> 
+               Z: I still can't pronounce the Russian name on this coin, the <mark>s</mark>ide which is serious. <br>
+               A: Than give me a name that's easier to pronounce. <br>
+               Z: I have a simple solution, turn the name around!<br>
+               A: There's beauty <mark>i</mark>n simplicity.<br><br>   
+               </div>
+
+<div id="reversebutton">
+               <p id="demo"></p>
+               <button onclick="myFunction()">Click here to reverse your name</button>
+
+
+</div>
+
+<div id="byline">
+*Z - is Zoobs, award winning artist who forges visual excellence in an embodiment of conceptual philosophy. Instagram: @theartistzoobs<br>
+*A - is me, when I'm in European continent. In the States I do as simple artworks as  my taste possibly allows me. </p>
+  </p></div>
+   
+                
+    
+
+    <script>
+    function myFunction() {
+
+      var person = prompt("Please enter your name", "Hillary Clinton");
+
+      String.prototype.reverse = function() { return this.split( '' ).reverse().join( '' ); };
+
+      person = person.reverse();
+    
+      if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello, " + person + "! How are you today?";
+      }
+
+    }
+
+
+
+</script>
+</body>
+</html>
